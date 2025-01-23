@@ -1,6 +1,4 @@
-import java.util.Map;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args){
@@ -39,10 +37,15 @@ public class Main {
             }
             else if (chooseCommand == 3)
             {
-
+                // do
             }
             else if (chooseCommand == 4)
             {
+                System.out.println("\n\nВесь список задач:\n");
+                Set<Integer> keys = tasks.keySet();
+                System.out.println("Приоритеты задач -> " + keys);
+                Collection <String> values = tasks.values();
+                System.out.println("Задачи -> " + values);
                 break;
             }
         }while(true);
